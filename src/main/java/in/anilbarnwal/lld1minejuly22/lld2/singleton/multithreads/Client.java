@@ -18,16 +18,4 @@ public class Client {
         }
         executorService.shutdown();
     }
-
-
-//    private static void demoMultithreaded()  {
-//        ExecutorService executor = Executors.newFixedThreadPool(10);
-//        for (int i = 0; i < 10; i++) {
-//            SingletonObjectCreator singletonObjectCreator = new SingletonObjectCreator();
-//            executor.execute(singletonObjectCreator);
-//        }
-//        executor.shutdown();
-//    }
-
-
 }
