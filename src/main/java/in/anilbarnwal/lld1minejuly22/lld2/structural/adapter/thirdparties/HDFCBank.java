@@ -1,4 +1,4 @@
-package in.anilbarnwal.lld1minejuly22.lld2.adapter.thirdparties;
+package in.anilbarnwal.lld1minejuly22.lld2.structural.adapter.thirdparties;
 
 public class HDFCBank {
     public void send(String from, String to, int amount){

@@ -1,8 +1,4 @@
-package in.anilbarnwal.lld1minejuly22.lld2.adapter;
-
-import in.anilbarnwal.lld1minejuly22.lld2.adapter.adapters.BankApi;
-import in.anilbarnwal.lld1minejuly22.lld2.adapter.adapters.HDFCAdapter;
-import in.anilbarnwal.lld1minejuly22.lld2.adapter.adapters.IciciBankAdapter;
+package in.anilbarnwal.lld1minejuly22.lld2.structural.adapter;
 
 public class Client {
     public static void main(String[] args) {

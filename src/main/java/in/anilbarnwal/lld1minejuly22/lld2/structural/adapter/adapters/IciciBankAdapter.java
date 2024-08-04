@@ -1,6 +1,6 @@
-package in.anilbarnwal.lld1minejuly22.lld2.adapter.adapters;
+package in.anilbarnwal.lld1minejuly22.lld2.structural.adapter.adapters;
 
-import in.anilbarnwal.lld1minejuly22.lld2.adapter.thirdparties.IciciBank;
+import in.anilbarnwal.lld1minejuly22.lld2.structural.adapter.thirdparties.IciciBank;
 
 public class IciciBankAdapter implements BankApi{
 

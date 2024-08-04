@@ -1,4 +1,4 @@
-package in.anilbarnwal.lld1minejuly22.lld2.adapter.adapters;
+package in.anilbarnwal.lld1minejuly22.lld2.structural.adapter.adapters;
 
 public interface BankApi {
     void sendMoney(String from, String to, int amount);

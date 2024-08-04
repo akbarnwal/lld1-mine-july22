@@ -1,8 +1,7 @@
-package in.anilbarnwal.lld1minejuly22.lld2.adapter;
+package in.anilbarnwal.lld1minejuly22.lld2.structural.adapter;
 
-import in.anilbarnwal.lld1minejuly22.lld2.adapter.adapters.BankApi;
-import in.anilbarnwal.lld1minejuly22.lld2.adapter.adapters.HDFCAdapter;
-import in.anilbarnwal.lld1minejuly22.lld2.adapter.adapters.IciciBankAdapter;
+import in.anilbarnwal.lld1minejuly22.lld2.structural.adapter.adapters.BankApi;
+import in.anilbarnwal.lld1minejuly22.lld2.structural.adapter.adapters.IciciBankAdapter;
 
 public class PhonePe {
     private BankApi bankApi = new IciciBankAdapter();
