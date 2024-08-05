@@ -1,6 +1,6 @@
-package in.anilbarnwal.lld1minejuly22.lld1class3.anothervillage;
+package in.anilbarnwal.lld1minejuly22.lld1.class3.anothervillage;
 
-import in.anilbarnwal.lld1minejuly22.lld1class3.village.Family;
+import in.anilbarnwal.lld1minejuly22.lld1.class3.village.Family;
 
 public class AnotherFamily {
     void checkAccess(){

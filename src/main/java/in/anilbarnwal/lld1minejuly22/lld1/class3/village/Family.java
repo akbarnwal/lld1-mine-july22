@@ -1,4 +1,4 @@
-package in.anilbarnwal.lld1minejuly22.lld1class3.village;
+package in.anilbarnwal.lld1minejuly22.lld1.class3.village;
 
 public class Family {
 
