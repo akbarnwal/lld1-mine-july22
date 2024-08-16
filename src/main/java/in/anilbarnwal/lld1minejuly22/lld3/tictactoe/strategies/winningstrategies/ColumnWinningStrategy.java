@@ -1,4 +1,4 @@
-package in.anilbarnwal.lld1minejuly22.lld3.tictactoe.services.winningstrategies;
+package in.anilbarnwal.lld1minejuly22.lld3.tictactoe.strategies.winningstrategies;
 
 import in.anilbarnwal.lld1minejuly22.lld3.tictactoe.models.Board;
 import in.anilbarnwal.lld1minejuly22.lld3.tictactoe.models.Move;
@@ -17,7 +17,6 @@ public class ColumnWinningStrategy implements WinningStrategy{
 
         // check if the current row is present in map
         if(!colMaps.containsKey(col)){
-//            rowMap.put(move.getPlayer().getSymbol(), 0);
             colMaps.put(col, new HashMap<>());
         }
         Map<Symbol, Integer> colCountMap = colMaps.get(col);

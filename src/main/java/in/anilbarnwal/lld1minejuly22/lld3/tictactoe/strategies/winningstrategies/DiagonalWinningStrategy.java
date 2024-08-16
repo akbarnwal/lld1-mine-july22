@@ -1,4 +1,4 @@
-package in.anilbarnwal.lld1minejuly22.lld3.tictactoe.services.winningstrategies;
+package in.anilbarnwal.lld1minejuly22.lld3.tictactoe.strategies.winningstrategies;
 
 import in.anilbarnwal.lld1minejuly22.lld3.tictactoe.models.Board;
 import in.anilbarnwal.lld1minejuly22.lld3.tictactoe.models.Move;
@@ -21,33 +21,16 @@ public class DiagonalWinningStrategy implements WinningStrategy{
         // Left diagonal => row == col
         if(row == col){
             leftDiagonalMap.put(symbol, leftDiagonalMap.getOrDefault(symbol, 0) + 1);
-            System.out.println("leftDiagonalMap : " + leftDiagonalMap.get(symbol));
+//            System.out.println("leftDiagonalMap : " + leftDiagonalMap.get(symbol));
             if (leftDiagonalMap.get(symbol) == boardSize){
                 return true;
             }
         }
         if(row + col == boardSize - 1){
             rightDiagonalMap.put(symbol, rightDiagonalMap.getOrDefault(symbol, 0) + 1);
-            System.out.println("rightDiagonalMap : " + rightDiagonalMap.get(symbol));
+//            System.out.println("rightDiagonalMap : " + rightDiagonalMap.get(symbol));
              return rightDiagonalMap.get(symbol) == boardSize;
         }
         return false;
-
-        // Left diagonal => row == col
-//        if (row == col) {
-//            leftDiagonalMap.put(symbol, leftDiagonalMap.getOrDefault(symbol, 0) + 1);
-//            System.out.println("leftDiagonalMap : " + leftDiagonalMap.get(symbol));
-//            if (leftDiagonalMap.get(symbol) == boardSize) {
-//                return true;
-//            }
-//        }
-//
-//        // Right diagonal => row + col == boardSize - 1
-//        if (row + col == boardSize - 1) {
-//            rightDiagonalMap.put(symbol, rightDiagonalMap.getOrDefault(symbol, 0) + 1);
-//            System.out.println("rightDiagonalMap : " + rightDiagonalMap.get(symbol));
-//            return rightDiagonalMap.get(symbol) == boardSize;
-//        }
-//        return false;
     }
 }

@@ -43,7 +43,7 @@ public class Player {
                 }
             }while (col < 0 || col > board.getDimension());
 
-        }while (board.getBoard().get(row).get(col).getState() != CellState.EMPTY);
+        }while (board.getBoard().get(row).get(col).getCellState() != CellState.EMPTY);
 
         return new Cell(row, col);  //Empty cell
     }

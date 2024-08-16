@@ -1,7 +1,7 @@
 package in.anilbarnwal.lld1minejuly22.lld3.tictactoe.services;
 
 import in.anilbarnwal.lld1minejuly22.lld3.tictactoe.models.*;
-import in.anilbarnwal.lld1minejuly22.lld3.tictactoe.services.winningstrategies.WinningStrategy;
+import in.anilbarnwal.lld1minejuly22.lld3.tictactoe.strategies.winningstrategies.WinningStrategy;
 import lombok.Getter;
 
 import java.util.List;
@@ -24,7 +24,7 @@ public class GameService {
 
         // valid move, we can execute on the board
         Cell currentCell = game.getBoard().getBoard().get(moveCell.getRow()).get(moveCell.getCol());
-        currentCell.setState(CellState.FILLED);
+        currentCell.setCellState(CellState.FILLED);
         currentCell.setPlayer(currentPlayer);
         Move finalMove = new Move(currentCell, currentPlayer);
         game.getMoves().add(finalMove);
@@ -56,7 +56,7 @@ public class GameService {
         List<List<Cell>> board = game.getBoard().getBoard();
         for(List<Cell> cells : board){
             for(Cell cell : cells){
-                if(cell.getState() == CellState.EMPTY){
+                if(cell.getCellState() == CellState.EMPTY){
                     System.out.print("| |");
                 }else {
                     System.out.printf("| " + cell.getPlayer().getSymbol().getSymbol() +" |");

@@ -2,7 +2,7 @@ package in.anilbarnwal.lld1minejuly22.lld3.tictactoe.controllers;
 
 import in.anilbarnwal.lld1minejuly22.lld3.tictactoe.models.Player;
 import in.anilbarnwal.lld1minejuly22.lld3.tictactoe.services.GameService;
-import in.anilbarnwal.lld1minejuly22.lld3.tictactoe.services.winningstrategies.WinningStrategy;
+import in.anilbarnwal.lld1minejuly22.lld3.tictactoe.strategies.winningstrategies.WinningStrategy;
 import lombok.Getter;
 
 import java.util.List;
