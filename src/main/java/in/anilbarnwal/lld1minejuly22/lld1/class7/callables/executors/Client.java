@@ -25,7 +25,7 @@ public class Client {
 //        ExecutorService executorService = Executors.newFixedThreadPool(5);
         ExecutorService executorService = Executors.newCachedThreadPool();
 
-        for(int i = 0 ; i < 100; i++){
+        for (int i = 0; i < 100; i++) {
             NumberPrinter numberPrinter = new NumberPrinter(i);
             executorService.execute(numberPrinter);
         }
