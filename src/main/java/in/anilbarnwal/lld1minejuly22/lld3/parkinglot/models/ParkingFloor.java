@@ -8,9 +8,8 @@ import java.util.List;
 @Getter
 @Setter
 public class ParkingFloor extends BaseModel{
-    private int fl_id;
-    private String floor_name;
+    private int floorNumber;
     private List<Gate> gates;
-    private ParkingFloorStatus parkingFloorStatus;
-
+    private ParkingFloorStatus status;
+    private List<ParkingSpot> parkingSpots;
 }

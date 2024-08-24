@@ -6,9 +6,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Gate extends BaseModel{
-    private int gate_id;
-    private String name;
-    private GateStatus gateStatus;
     private GateType gateType;
-//    private parking_lost gate;
+    private GateStatus gateStatus;
+    private ParkingLot parkingLot;
+    private Operator operator;
 }

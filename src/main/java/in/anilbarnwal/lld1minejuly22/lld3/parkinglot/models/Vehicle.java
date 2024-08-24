@@ -5,8 +5,9 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class SupportedVehicle extends BaseModel {
-    private int sv_id;
-    private long registered_number;
+public class Vehicle extends BaseModel {
+    private String ownerName;
+    private String ownerContactNumber;
+    private String registrationNumber;
     private VehicleType vehicleType;
 }
