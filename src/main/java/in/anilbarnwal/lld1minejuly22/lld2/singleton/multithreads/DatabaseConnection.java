@@ -7,17 +7,13 @@ public class DatabaseConnection {
     //Optimised solution - Best solution
     public static DatabaseConnection getInstance() {
         if (instance == null) {
-            System.out.println("After first null check" + Thread.currentThread().getName());
             //Double check lock
             synchronized(DatabaseConnection.class) {
-                System.out.println("Before second null check" + Thread.currentThread().getName());
                 if (instance == null) {
-                    System.out.println("After second null check" + Thread.currentThread().getName());
                     instance = new DatabaseConnection();
                 }
             }
         }
         return instance;
     }
-
 }

@@ -1,4 +1,4 @@
-package in.anilbarnwal.lld1minejuly22.lld1.class7.callables.executors;
+package in.anilbarnwal.lld1minejuly22.lld1.class7.executors;
 
 public class NumberPrinter implements Runnable{
     private int number;

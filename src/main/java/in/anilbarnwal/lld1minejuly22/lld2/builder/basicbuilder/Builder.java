@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class StudentHelper {
+public class Builder {
     private String name;
     private int age;
     private String batch;

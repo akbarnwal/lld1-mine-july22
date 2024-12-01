@@ -1,4 +1,4 @@
-package in.anilbarnwal.lld1minejuly22.lld1.class7.callables.executors;
+package in.anilbarnwal.lld1minejuly22.lld1.class7.executors;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -11,12 +11,12 @@ public class Client {
 
         long endTime = System.nanoTime();
 
-        long duration = (endTime - startTime) / 1_000_000; // Convert to milliseconds
-        System.out.println("Time taken: " + duration + " ms");
-        System.out.println("End");
-
-        System.out.println("Start2");
-        demoNumberPrinter();
+//        long duration = (endTime - startTime) / 1_000_000; // Convert to milliseconds
+//        System.out.println("Time taken: " + duration + " ms");
+//        System.out.println("End");
+//
+//        System.out.println("Start2");
+//        demoNumberPrinter();
         System.out.println("End2");
     }
 

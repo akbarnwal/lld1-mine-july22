@@ -2,7 +2,7 @@ package in.anilbarnwal.lld1minejuly22.lld2.builder.basicbuilder;
 
 public class Client {
     public static void main(String[] args) {
-        StudentHelper builder = new StudentHelper();
+        Builder builder = new Builder();
         builder.setName("Aanya");
         builder.setAge(5);
 

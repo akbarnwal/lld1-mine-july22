@@ -10,7 +10,7 @@ public class Student {
     private  int gradYear;
     private Double psp;
 
-    Student(StudentHelper builder){
+    Student(Builder builder){
         //Validation first
 
         this.name = builder.getName();
