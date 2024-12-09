@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Client {
     public static void main(String[] args) {
-//        prototypeStudent();
+        prototypeStudent();
 
-        demoRegister();
+//        demoRegister();
 
     }
 
@@ -51,8 +51,8 @@ public class Client {
         IntelligentStudent intelligentStud = new IntelligentStudent("Mohi", 6, marks, 8);
         CreativeStudent creativeStud = new CreativeStudent("Gudiya", 40, marks, 9);
 
-        Student studentCopy = student;
-        Student studentCopy2 = studentCopy.copy();
+        Student studentRef = student;
+        Student studentCopy = studentRef.copy();
 
         Student intelligentStudentCopy = intelligentStud;
         Student intelligentStudentCopy2 = intelligentStudentCopy.copy();
@@ -62,7 +62,9 @@ public class Client {
 
         marks.add(10);
 
-        System.out.println(student);
+        System.out.println("Student: " + student);
+        System.out.println("studentRef: " + studentRef);
+        System.out.println("studentCopy: " + studentCopy);
         System.out.println(intelligentStud);
         System.out.println(creativeStud);
     }

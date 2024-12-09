@@ -1,4 +1,6 @@
-package in.anilbarnwal.lld1minejuly22.lld2.strategy.strategies;
+package in.anilbarnwal.lld1minejuly22.lld2.strategy;
+
+import in.anilbarnwal.lld1minejuly22.lld2.strategy.strategies.PathCalculator;
 
 public class GoogleMap {
     private PathCalculator pathCalculator;

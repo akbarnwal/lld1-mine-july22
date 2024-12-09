@@ -13,11 +13,14 @@ public class Client {
     private static void cloneStudent() throws CloneNotSupportedException {
         Student student = new Student("Aanya", 5);
 
-        Student cloneStudent = (Student) student.clone();
+        Student cloneStudent = (Student) student.clone();  //Will create new instance/object
         cloneStudent.setName("Aanya2");
+        System.out.println(student + " " + student.getName());
+        System.out.println(cloneStudent + " " + cloneStudent.getName());
 
-        Student refStudent = student;
+        Student refStudent = student;   //Reference of the same object
         refStudent.setName("Anil");
-        System.out.println(student);
+        System.out.println(student + " " + student.getName());
+        System.out.println(refStudent + " " + refStudent.getName());
     }
 }
